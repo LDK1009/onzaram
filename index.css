@@ -1,6 +1,72 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+
+/* ===== 기본 스타일 ===== */
 body {
   padding: 0;
   margin: 0;
+  font-family: "Pretendard";
+  box-sizing: border-box;
 }
 
 .container {
@@ -12,15 +78,107 @@ body {
 
 .image {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
-.image-link {
+/* ===== 공통 컨테이너 ===== */
+.image-container {
+  width: 100%;
+  position: relative;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== 공통 Absolute 레이어 ===== */
+.absolute-layer {
+  position: absolute;
+}
+
+.image1-logo {
+  width: 475px;
+  top: 211px;
+  left: 52px;
+}
+
+.image1-text-layer {
+  position: absolute;
+  bottom: 66px;
+  left: 44px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  line-height: normal;
+}
+
+.image1-text-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  line-height: normal;
+  height: auto;
+}
+
+.image1-key-text {
+  width: 91px;
+  font-weight: 500;
+  font-size: 17.5px;
+  color: white;
+  opacity: 0.7;
+  line-height: normal;
+  height: auto;
+}
+
+.image1-value-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  line-height: normal;
+  height: auto;
+}
+
+.image1-button {
+  padding: 22px 12px;
+  margin-top: 8px;
+  font-size: 19px;
+  font-weight: 700;
+  color: white;
+  border: 1px solid white;
+  border-radius: 66px;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  line-height: normal;
+  height: auto;
+}
+
+.image2-text-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  display: block;
-  line-height: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.image-link img {
-  display: block;
+.image2-left-text {
+  margin-left: 56px;
+  text-align: left;
+  font-weight: 800;
+  font-size: 52.5px;
+  line-height: 130%;
+  color: white;
+}
+
+.image2-right-text {
+  margin-right: 56px;
+  text-align: right;
+  font-weight: 800;
+  font-size: 52.5px;
+  line-height: 130%;
+  color: white;
 }
